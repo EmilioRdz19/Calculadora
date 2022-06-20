@@ -4,7 +4,7 @@ function App() {
 	const [calc, setCalc] = useState("");
 	const [result, setResult] = useState("");
 
-	const ops = ['/', '*', '-', '+', '.'];
+	const ops = ['+', '-', '*', '/', '.'];
 
 	const createDigits = () => {
 		const digits = [];
@@ -48,14 +48,14 @@ function App() {
 		<div className="App">
 			<div className="calculator">
 				<div className="display">
-					<span>{result ? '(' + result + ')' : ''}</span> {calc || 0}
+					<span></span> {calc || 0}
 				</div>
 
 				<div className="operators">
-					<button onClick={() => updateCalc('/')}>/</button>
-					<button onClick={() => updateCalc('*')}>x</button>
-					<button onClick={() => updateCalc('-')}>-</button>
 					<button onClick={() => updateCalc('+')}>+</button>
+					<button onClick={() => updateCalc('-')}>-</button>
+					<button onClick={() => updateCalc('*')}>*</button>
+					<button onClick={() => updateCalc('/')}>/</button>
 
 					<button onClick={deleteLast}>DEL</button>
 				</div>

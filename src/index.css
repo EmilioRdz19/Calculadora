@@ -1,7 +1,7 @@
 :root {
-	--primary: #d81e5b;
+	--primary: #000000;
 	--secondary: #8c38ff;
-	--dark: #131a26;
+	--dark: #577ec2;
 	--light: #EEE;
 }
 
@@ -27,7 +27,7 @@ body {
 	width: 100%;
 	max-width: 400px;
 	background-color: #FFF;
-	border-radius: 16px;
+	border-radius: 0px;
 	overflow: hidden;
 	box-shadow: 0px 2px 64px rgba(0, 0, 0, 0.2);
 }
